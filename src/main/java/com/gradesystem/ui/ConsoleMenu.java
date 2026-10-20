@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ConsoleMenu {
 
-    private static final int LABEL_WIDTH = 28;
+    private static final int LABEL_WIDTH = 24;
 
     private final ConsoleIO io;
     private final List<Screen> screens;

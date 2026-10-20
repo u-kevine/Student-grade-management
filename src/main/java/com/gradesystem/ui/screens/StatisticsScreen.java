@@ -118,9 +118,9 @@ public class StatisticsScreen implements Screen {
         io.println("SUBJECT PERFORMANCE");
         io.println(AppConstants.LINE);
         for (String type : subjectCatalog.getSubjectTypes()) {
-            io.printf("%-22s %s average%n", type + " Subjects:", formatAverage(statisticsService.getSubjectTypeAverage(type)));
+            io.printf("%-20s %s average%n", type + " Subjects:", formatAverage(statisticsService.getSubjectTypeAverage(type)));
             for (Subject subject : subjectCatalog.getSubjectsByType(type)) {
-                io.printf("  %-20s %s%n", subject.getSubjectName() + ":",
+                io.printf("  %-18s %s%n", subject.getSubjectName() + ":",
                         formatAverage(statisticsService.getSubjectAverage(subject.getSubjectName())));
             }
         }
