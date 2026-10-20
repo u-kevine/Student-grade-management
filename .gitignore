@@ -1,0 +1,22 @@
+# ---- Build output ----
+target/
+out/
+bin/
+*.class
+
+# ---- Files the app creates while running ----
+logs/
+reports/
+*.log
+
+# ---- IDE settings ----
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# ---- Operating system ----
+.DS_Store
+Thumbs.db
