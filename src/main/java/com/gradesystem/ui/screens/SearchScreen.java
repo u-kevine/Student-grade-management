@@ -188,7 +188,6 @@ public class SearchScreen implements Screen {
         String fileName = io.readValidText("Enter filename (without extension): ", InputValidator::validateFileName);
         try {
             ExportResult result = exportService.exportSearchResults(results, lastCriteria, fileName);
-            io.println();
             io.showSuccess("Search results exported to " + result.getLocation() + result.getFileName()
                     + " (" + result.getFormattedSize() + ")");
         } catch (InvalidInputException | FileExportException e) {
